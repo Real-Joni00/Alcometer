@@ -1,5 +1,5 @@
 import './App.css';
-import {useState} from 'react'
+import { useState } from 'react'
 
 function App() {
   const [weight, setWeight] = useState()
@@ -41,7 +41,7 @@ function App() {
 
       <div>
         <label>Bottles</label>
-        <select name='bottles' type='number' value={bottles} onChange = {e => setBottles(e.target.value)}>
+        <select name='bottles' type='number' value={bottles} onChange={e => setBottles(e.target.value)}>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -57,7 +57,7 @@ function App() {
 
       <div>
         <label>Time</label>
-        <select name='time' type='number' value={time} onChange = {e => setTime(e.target.value)}>
+        <select name='time' type='number' value={time} onChange={e => setTime(e.target.value)}>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -73,8 +73,8 @@ function App() {
 
       <div>
         <label className='gender'>Gender</label>
-        <input type='radio' name='gender' value='male' defaultChecked onChange = {e => setGender(e.target.value)}/> <label className='opt'>Male</label>
-        <input type='radio' name='gender' value='female' onChange = {e => setGender(e.target.value)}/> <label className='opt'>Female</label> 
+        <input type='radio' name='gender' value='male' defaultChecked onChange={e => setGender(e.target.value)} /> <label className='opt'>Male</label>
+        <input type='radio' name='gender' value='female' onChange={e => setGender(e.target.value)} /> <label className='opt'>Female</label>
       </div>
 
       <div>
